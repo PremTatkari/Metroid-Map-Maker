@@ -39,10 +39,17 @@ h1 {
     font-family: Super-Metroid;
 }
 
-.instructions {
+.instructions1 {
     position: absolute;
     list-style: none;
-    right: 2rem;
+    right: 20rem;
+    top: 0;
+}
+
+.instructions2 {
+    position: absolute;
+    list-style: none;
+    right: 1rem;
     top: 0;
 }
 
