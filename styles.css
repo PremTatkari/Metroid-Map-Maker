@@ -1,0 +1,125 @@
+@font-face {
+    font-family: Metroid;
+    src: url(fonts/metroid-zero-mission.ttf);
+}
+
+@font-face {
+    font-family: Super-Metroid;
+    src: url(fonts/andro-font.ttf);
+}
+
+@font-face {
+    font-family: Chozo;
+    src: url(fonts/chozo-dread.ttf);
+}
+
+body {
+    font-family: Metroid, Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.samus {
+    position: absolute;
+    top: 2rem;
+    left: 13rem;
+    width: 15%;
+    height: auto;
+}
+
+.metroid {
+    position: absolute;
+    top: 2.7rem;
+    left: 30rem;
+    width: 5%;
+    height: auto;
+}
+
+h1 {
+    font-family: Super-Metroid;
+}
+
+table {
+    position: absolute;
+    display: inline;
+    right: 10%;
+}
+
+table,
+tr {
+    margin: 0;
+}
+
+table,
+tr,
+td {
+    border: 3px solid white;
+    border-collapse: collapse;
+    padding: 6.1px;
+    background-color: darkgrey;
+}
+
+.selected {
+    outline-width: 4.5px;
+    outline-offset: 0;
+    outline-color: rgb(119, 0, 0);
+    outline-style: solid;
+    animation: animateOutline 400ms infinite;
+    animation-direction: alternate;
+}
+
+@keyframes animateOutline {
+    0% {
+        outline-offset: 0;
+    }
+
+    50% {
+        outline-width: 5.5px;
+        outline-offset: 1px;
+    }
+
+    100% {
+        outline-width: 6.5px;
+        outline-offset: 1.5px;
+    }
+}
+
+.info {
+    background-color: black;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: auto;
+    padding: 1rem;
+}
+
+textarea {
+    position: absolute;
+    display: inline;
+    background-color: black;
+    border-style: none;
+    font-family: Metroid, Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    resize: none;
+    margin: auto;
+    top: 50%;
+    bottom: 50%;
+    left: 12px;
+    width: 40%;
+    max-height: 600px;
+}
+
+textarea:focus::placeholder {
+    color: transparent;
+}
+
+.coords {
+    font-size: small;
+}
+
+.alien-font {
+    font-family: Chozo;
+}
